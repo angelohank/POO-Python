@@ -8,7 +8,7 @@ nr_canais = 30
 
 # TV 2
 ano_lancamento = 2026
-marca = 'Samsunb'
+marca = 'Samsung'
 preco = 1500.00
 nr_canais = 50
 
@@ -25,3 +25,20 @@ def criar_tv(ano_lancamento, marca, preco, nr_canais):
 
 # para criar, basta chamar a funcao e passar os valores desejados
 # com isso a copia de código é reduzida
+
+# -----------//------------------//--------------
+
+#criando funcoes para alterar atributos
+
+def aumenta_canais(tv, qt_canais):
+
+    #eu SEI que a tv tem canais, porque conheço a sua estrutura de dicionario
+
+    #PROBLEMA: se a chave mudar, eu tenho que ir em todos os lugares que usam ela, e alterar um por um
+    tv['nr_canais'] += qt_canais
+
+def diminuir_canais(tv, qt_canais):
+    tv['nr_canais'] -= qt_canais
+
+def qt_canais(tv):
+    print(tv['nr_canais'])
