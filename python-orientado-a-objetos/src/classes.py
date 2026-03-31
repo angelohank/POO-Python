@@ -12,3 +12,7 @@ tv_1 = Televisao()
 # isso terá uma saida parecida com: <__main__.Televisao object at 0x00000182A03CFCD0>
 # mostrando em que endereço da memória a minha nova variavel, do tipo Televisao, está armazenada
 print(tv_1)
+
+
+#removendo referenciacao de objetos
+tv_1 = None
