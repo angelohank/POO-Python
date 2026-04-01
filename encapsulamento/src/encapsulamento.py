@@ -41,7 +41,8 @@ class Televisao():
         self.__ano_lancamento = ano_lancamento
 
     # usando property para definir getter e setter ja na declaracao
-    ano_lancamento = property(fget=getAno, fset=setAno)
+    ano_lancamento = property(fget=getAno,
+                              fset=setAno)
 
 tv = Televisao(3)
 # print(tv._Televisao__ligada)
@@ -54,7 +55,5 @@ tv = Televisao(3)
 
 tv.marca = "lalala"
 print(tv.marca)
-
-
 
 print(tv.getAno())
